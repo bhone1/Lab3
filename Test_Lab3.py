@@ -1,4 +1,5 @@
 import Lab3
+import Lab3.Lab3
 
 print("Test_Lab3")
 
@@ -28,3 +29,15 @@ def test_bubble_sort_invalid():
     result = Lab3.bubble_sort(input_arr, 3)
 
     assert (result == [])
+
+def test_bubble_oversize_array():
+    input_arr = [64, 34, 25, 12, 22, 11, 90, 3, 56, 11, 77]
+    assert(Lab3.bubble_sort(input_arr, 1) == 1)
+
+def test_bubble_zero_items():
+    input_arr = []
+    assert(Lab3.bubble_sort(input_arr,1) == 0)
+
+def test_bubble_not_int():
+    input_arr = [64, '34', 25, 12, 22, 11, 90]
+    assert(Lab3.bubble_sort(input_arr,1) == 2)
