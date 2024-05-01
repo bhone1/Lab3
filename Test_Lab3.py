@@ -1,5 +1,4 @@
 import Lab3
-import Lab3.Lab3
 
 print("Test_Lab3")
 
